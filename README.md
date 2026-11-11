@@ -21,7 +21,7 @@
 
 ## 文件
 
-- `index.html` + `app.js` + `assets/`：构建产物，由 GitHub Pages 直接提供。图版以 base64 文本存放在 `assets/*.b64`，页面加载时在浏览器里解码。
+- `index.html` + `app.js` + `assets/`：构建产物，由 GitHub Pages 直接提供。图版以 base64 文本打包存放在 `assets/*.json`（缩略图、桌面、每班一包），页面加载时在浏览器里解码。
 - `src/app.tsx`（界面）、`src/main.tsx`、`src/content.json`（值班员可见的文案）。
 - 重新构建：`npm i && npx esbuild src/main.tsx --bundle --minify --jsx=automatic --outfile=app.js`
 
